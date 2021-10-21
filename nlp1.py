@@ -94,5 +94,5 @@ for s in happy.synsets:
 synonym = happy.synsets[1].lemmas()[0].name()
 print(synonym)
 
-antonym = happy.synsets[0].lemmas()[0].lemmas()[0].antonyms()[0].name()
+antonym = happy.synsets[0].lemmas()[0].antonyms()[0].name()
 print(antonym)
