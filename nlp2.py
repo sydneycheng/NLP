@@ -4,7 +4,6 @@ from pathlib import Path
 import pandas as pd
 
 #nltk.download("stopwords")
-
 from nltk.corpus import stopwords
 
 stops = stopwords.words("english")
