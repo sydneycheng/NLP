@@ -5,5 +5,22 @@
 
 from textblob import TextBlob
 from pathlib import Path
+import textblob
 
-text = TextBlob(Path("social media.txt").read_text())
+text = Path("social media.txt").read_text()
+blob = TextBlob(text)
+
+sentences = blob.sentences
+
+for x in sentences:
+    print(x)
+    print(round(x.sentiment.polarity, 3))
+
+
+from textblob.sentiments import NaiveBayesAnalyzer
+
+blob = TextBlob(text, analyzer=NaiveBayesAnalyzer())
+
+print(blob.sentiment)
+
+
